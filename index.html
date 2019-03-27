@@ -32,8 +32,42 @@
           <label for="end-time">End time:</label>
           <input id="end-time" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn btn-light">Submit</button>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#submitModal">Submit</button>
+
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thank You For Booking!</h4>
+              </div>
+              <div class="modal-body" id="booking">
+                <p>Thank You For Booking!</p>
+                <p>Name:</p><span class="name"></span>
+                <p>Description:</p><span class="description"></span>
+                <p>Date:</p><span class="date"></span>
+                <p>Start Time:</p><span class="startTime"></span>
+                <p>End Time:</p><span class="endTime"></span></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
+      <!-- <div id="booking">
+        <p>Thank You For Booking!</p>
+        <p>Name:</p><span class="name"></span>
+        <p>Description:</p><span class="description"></span>
+        <p>Date:</p><span class="date"></span>
+        <p>Start Time:</p><span class="startTime"></span>
+        <p>End Time:</p><span class="endTime"></span></p>
+      </div> -->
+      <!-- write a modal here
+      hide it
+      on form submit, show it and .text() your inputted text to it -->
     </div>
   </body>
 </html>
